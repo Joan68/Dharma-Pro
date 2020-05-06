@@ -1,0 +1,160 @@
+<!--Double navigation-->
+<header>
+
+    <!-- Sidebar navigation -->
+    <mdb-side-nav #sidenav [fixed]="false">
+
+        <mdb-navbar-brand>
+            <li>
+                <div class="logo-wrapper waves-light">
+                    <a href="#">
+                        <img src="assets/logo-nath-black.png" class="img-fluid flex-center">
+                    </a>
+                </div>
+            </li>
+            <!--/. Logo -->
+        </mdb-navbar-brand>
+
+        <links>
+
+            <!-- Side navigation links -->
+            <li>
+                <ul class="collapsible collapsible-accordion  amber-text">
+                    <mdb-accordion [multiple]="false" aria-multiselectable="false">
+
+                        <!-- Simple link -->
+                        <mdb-accordion-item class="no-collase hideOnBigScreens">
+                            <mdb-accordion-item-head mdbWavesEffect>
+                                <mdb-icon fas icon="info-circle"></mdb-icon> Massages
+                            </mdb-accordion-item-head>
+                            <mdb-accordion-item-body></mdb-accordion-item-body>
+                        </mdb-accordion-item>
+
+                        <mdb-accordion-item class="no-collase hideOnBigScreens">
+                            <mdb-accordion-item-head mdbWavesEffect>
+                                <mdb-icon fas icon="user-alt"></mdb-icon> A propos de moi
+                            </mdb-accordion-item-head>
+                            <mdb-accordion-item-body></mdb-accordion-item-body>
+                        </mdb-accordion-item>
+
+                        <mdb-accordion-item class="no-collase hideOnBigScreens">
+                            <mdb-accordion-item-head mdbWavesEffect>
+                                <mdb-icon far icon="grin-beam"></mdb-icon> Témoignages
+                            </mdb-accordion-item-head>
+                            <mdb-accordion-item-body></mdb-accordion-item-body>
+                        </mdb-accordion-item>
+
+                        <mdb-accordion-item class="no-collase hideOnBigScreens">
+                            <mdb-accordion-item-head mdbWavesEffect>
+                                <mdb-icon far icon="envelope"></mdb-icon> Contact
+                            </mdb-accordion-item-head>
+                            <mdb-accordion-item-body></mdb-accordion-item-body>
+                        </mdb-accordion-item>
+
+                        <!-- Collapsible link -->
+                        <mdb-accordion-item>
+                            <mdb-accordion-item-head mdbWavesEffect>
+                                <mdb-icon far icon="hand-point-right"></mdb-icon> Les massages
+                            </mdb-accordion-item-head>
+                            <mdb-accordion-item-body>
+                                <ul>
+                                    <li>
+                                        <a href="#" mdbWavesEffect>Link 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" mdbWavesEffect>Link 2</a>
+                                    </li>
+                                </ul>
+                            </mdb-accordion-item-body>
+                        </mdb-accordion-item>
+
+                    </mdb-accordion>
+                </ul>
+            </li>
+
+            <!--Social-->
+            <li>
+                <ul class="social">
+                    <li>
+                        <a href="https://www.facebook.com/Dharma-Soins-Ayurv%C3%A9diques-102742651098813/"
+                            class="icons-sm">
+                            <button type="button" mdbBtn color="fb" class="waves-light" mdbWavesEffect>Mon
+                                Facebook</button>
+                        </a>
+
+                    </li>
+                </ul>
+            </li>
+            <!--/Social-->
+        </links>
+        <!--/. Side navigation links -->
+        <div class="sidenav-bg orange lighten-4"></div>
+    </mdb-side-nav>
+    <!--/. Sidebar navigation -->
+
+    <!-- Navbar -->
+    <mdb-navbar SideClass="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav"
+        [containerInside]="false">
+
+        <navlinks class="navbar-container">
+            <!-- SideNav slide-out button -->
+            <div>
+                <a (click)="sidenav.show()" class="button-collapse hidden-nav-button-collapse mx-0">
+                    <mdb-icon fas icon="bars"></mdb-icon>
+                </a>
+            </div>
+            <!--/. SideNav slide-out button -->
+        </navlinks>
+
+        <mdb-navbar-brand>
+            <!-- Breadcrumb-->
+            <div class="logo-wrapper waves-light pad-side">
+                <a href="#">
+                    <img src="assets/logo-nath-white.png" class="img-fluid flex-center">
+                </a>
+            </div>
+            <!--/. Breadcrumb-->
+        </mdb-navbar-brand>
+
+        <navlinks>
+            <ul class="nav navbar-nav nav-flex-icons mr-auto ie-double-nav ie-hidden-double-nav hideOnMobile">
+                <li class="nav-item waves-light" mdbWavesEffect>
+                    <a class="nav-link">
+                        <span class="clearfix d-none d-sm-inline-block">Massages</span>
+                    </a>
+                </li>
+                <li class="nav-item waves-light" mdbWavesEffect>
+                    <a class="nav-link">
+                        <span class="clearfix d-none d-sm-inline-block">A propos de moi</span>
+                    </a>
+                </li>
+                <li class="nav-item waves-light" mdbWavesEffect>
+                    <a class="nav-link">
+                        <span class="clearfix d-none d-sm-inline-block">Témoignages</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav nav-flex-icons ml-auto ie-double-nav ie-hidden-double-nav">
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbWavesEffect>
+                        <mdb-icon fas icon="envelope"></mdb-icon>
+                        <span class="clearfix d-none d-sm-inline-block">Contact</span>
+                    </a>
+                </li>
+                <!-- <li class="nav-item dropdown btn-group" dropdown>
+                    <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu dropdown-primary dropdown-menu-right" role="menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li> -->
+            </ul>
+        </navlinks>
+    </mdb-navbar>
+    <!--/. Navbar -->
+
+</header>
+<!--/.Double navigation-->

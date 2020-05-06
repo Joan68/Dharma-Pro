@@ -1,0 +1,7 @@
+node_modules
+angular.json
+package-lock.json
+package.json
+./angular.json
+./package-lock.json
+./package.json

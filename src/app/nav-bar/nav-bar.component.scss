@@ -1,0 +1,19 @@
+.pad-side {
+    padding: 0px 20px 0px 15px;
+}
+
+li ul {
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 991px) {
+    .hideOnMobile {
+        display: none;
+    }
+}
+
+@media (min-width: 991px) {
+    .hideOnBigScreens {
+        display: none;
+    }
+}
