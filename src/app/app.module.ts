@@ -13,12 +13,14 @@ import { AgmCoreModule } from '@agm/core';
 // For MDB Angular Pro
 import { SidenavModule, WavesModule, AccordionModule } from 'ng-uikit-pro-standard';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MassageComponent } from './massage/massage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavBarComponent
+    NavBarComponent,
+    MassageComponent
   ],
   imports: [
     BrowserModule,

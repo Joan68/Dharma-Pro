@@ -25,7 +25,7 @@
                         <!-- Simple link -->
                         <mdb-accordion-item class="no-collase hideOnBigScreens">
                             <mdb-accordion-item-head mdbWavesEffect>
-                                <mdb-icon fas icon="info-circle"></mdb-icon> Massages
+                                <mdb-icon fas icon="info-circle" [routerLink]="['/massage']"></mdb-icon> Massages
                             </mdb-accordion-item-head>
                             <mdb-accordion-item-body></mdb-accordion-item-body>
                         </mdb-accordion-item>
@@ -54,7 +54,7 @@
                         <!-- Collapsible link -->
                         <mdb-accordion-item>
                             <mdb-accordion-item-head mdbWavesEffect>
-                                <mdb-icon far icon="hand-point-right"></mdb-icon> Les massages
+                                <mdb-icon far icon="hand-point-right"></mdb-icon> Liste des massages
                             </mdb-accordion-item-head>
                             <mdb-accordion-item-body>
                                 <ul>
@@ -119,7 +119,7 @@
         <navlinks>
             <ul class="nav navbar-nav nav-flex-icons mr-auto ie-double-nav ie-hidden-double-nav hideOnMobile">
                 <li class="nav-item waves-light" mdbWavesEffect>
-                    <a class="nav-link">
+                    <a class="nav-link" [routerLink]="['/massage']">
                         <span class="clearfix d-none d-sm-inline-block">Massages</span>
                     </a>
                 </li>
