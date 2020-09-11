@@ -1,47 +1,55 @@
 .intro-header {
-    height: unset !important;
-}
-.top-nav-collapse {
-    background-color: #78909c !important;
-}
-.view {
-    height: 100vh !important;
-    background-size: cover;
-}
-.navbar:not(.top-nav-collapse) {
-    background: transparent !important;
-}
-@media (max-width: 768px) {
-    .navbar:not(.top-nav-collapse) {
-        background: #78909c !important;
-    }
-}
-h1 {
-    letter-spacing: 8px;
-}
-h5 {
-    letter-spacing: 3px;
-}
-.hr-light {
-    border-top: 3px solid #fff;
-    width: 80px;
-}
-@media (max-width: 740px) {
-    .full-height,
-    .full-height body,
-    .full-height header,
-    .full-height header .view {
-        height: 700px;
-    }
+  height: unset !important;
 }
 
+.view {
+  height: 100vh;
+  background-size: cover;
+}
+
+h1 {
+  letter-spacing: 8px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+@media (max-width: 740px) {
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header .view {
+    height: 700px;
+  }
+}
+
+@media (max-width: 320px) { // pour iphone SE
+  #mainTitle {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  .py-5 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 1rem !important;
+  }
+}
+
+
 .jumbotron {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .card-image {
-    background-size: cover;
-    background-position: center;
-    width: 100%;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
 }
 

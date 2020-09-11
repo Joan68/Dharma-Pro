@@ -23,14 +23,14 @@
                     <mdb-accordion [multiple]="false" aria-multiselectable="false">
 
                         <!-- Simple link -->
-                        <mdb-accordion-item class="no-collase hideOnBigScreens">
+                        <mdb-accordion-item class="no-collase hideOnBigScreens" [routerLink]="['/massage']">
                             <mdb-accordion-item-head mdbWavesEffect>
-                                <mdb-icon fas icon="info-circle" [routerLink]="['/massage']"></mdb-icon> Massages
+                                <mdb-icon fas icon="info-circle"></mdb-icon> Massages
                             </mdb-accordion-item-head>
                             <mdb-accordion-item-body></mdb-accordion-item-body>
                         </mdb-accordion-item>
 
-                        <mdb-accordion-item class="no-collase hideOnBigScreens">
+                        <mdb-accordion-item class="no-collase hideOnBigScreens" [routerLink]="['/about-me']">
                             <mdb-accordion-item-head mdbWavesEffect>
                                 <mdb-icon fas icon="user-alt"></mdb-icon> A propos de moi
                             </mdb-accordion-item-head>
@@ -43,6 +43,13 @@
                             </mdb-accordion-item-head>
                             <mdb-accordion-item-body></mdb-accordion-item-body>
                         </mdb-accordion-item>
+
+                      <mdb-accordion-item class="no-collase hideOnBigScreens">
+                        <mdb-accordion-item-head mdbWavesEffect>
+                          <mdb-icon far icon="grin-beam"></mdb-icon> Hygiène de vie et nutrition
+                        </mdb-accordion-item-head>
+                        <mdb-accordion-item-body></mdb-accordion-item-body>
+                      </mdb-accordion-item>
 
                         <mdb-accordion-item class="no-collase hideOnBigScreens">
                             <mdb-accordion-item-head mdbWavesEffect>
@@ -60,6 +67,18 @@
                                 <ul>
                                     <li>
                                         <a href="#" mdbWavesEffect>Link 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" mdbWavesEffect>Link 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" mdbWavesEffect>Link 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" mdbWavesEffect>Link 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" mdbWavesEffect>Link 2</a>
                                     </li>
                                     <li>
                                         <a href="#" mdbWavesEffect>Link 2</a>
@@ -88,7 +107,7 @@
             <!--/Social-->
         </links>
         <!--/. Side navigation links -->
-        <div class="sidenav-bg orange lighten-4"></div>
+        <div class="sidenav-bg blue-2"></div>
     </mdb-side-nav>
     <!--/. Sidebar navigation -->
 
@@ -109,7 +128,7 @@
         <mdb-navbar-brand>
             <!-- Breadcrumb-->
             <div class="logo-wrapper waves-light pad-side">
-                <a href="#">
+                <a [routerLink]="['']">
                     <img src="assets/logo-nath-white.png" class="img-fluid flex-center">
                 </a>
             </div>
@@ -123,7 +142,7 @@
                         <span class="clearfix d-none d-sm-inline-block">Massages</span>
                     </a>
                 </li>
-                <li class="nav-item waves-light" mdbWavesEffect>
+                <li class="nav-item waves-light" mdbWavesEffec [routerLink]="['/about-me']">
                     <a class="nav-link">
                         <span class="clearfix d-none d-sm-inline-block">A propos de moi</span>
                     </a>
@@ -133,6 +152,11 @@
                         <span class="clearfix d-none d-sm-inline-block">Témoignages</span>
                     </a>
                 </li>
+              <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link">
+                  <span class="clearfix d-none d-sm-inline-block">Hygiène de vie et nutrition</span>
+                </a>
+              </li>
             </ul>
             <ul class="nav navbar-nav nav-flex-icons ml-auto ie-double-nav ie-hidden-double-nav">
                 <li class="nav-item">

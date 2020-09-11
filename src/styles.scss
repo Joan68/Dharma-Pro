@@ -1,15 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 
 .navbar {
-    background-color: #f0a53b;
-    color: white;
+  background-color: #619cb1;
+  color: white;
 }
 
+.blue-2 {
+  background-color: #619cb1;
+}
+
+.text-blue-2 {
+  color: #619cb1;
+}
 
 a h5 {
-    color: black!important;
+  color: black !important;
 }
 
 .form-group {
-    color: black!important;
+  color: black !important;
+}
+
+@media (max-width: 991px) {
+  .fa-ellipsis-v, .btn-floating {
+    font-size: 1rem !important;
+    line-height: 40px !important;
+  }
+  .fixed-action-btn {
+    bottom: 16px!important;
+    right: 10px!important;
+  }
 }

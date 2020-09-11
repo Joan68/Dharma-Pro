@@ -10,17 +10,18 @@ import { MDBBootstrapModulesPro } from 'ng-uikit-pro-standard';
 import { MDBSpinningPreloader } from 'ng-uikit-pro-standard';
 import { AgmCoreModule } from '@agm/core';
 
-// For MDB Angular Pro
 import { SidenavModule, WavesModule, AccordionModule } from 'ng-uikit-pro-standard';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MassageComponent } from './massage/massage.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavBarComponent,
-    MassageComponent
+    MassageComponent,
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,
