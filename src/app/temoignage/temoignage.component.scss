@@ -8,9 +8,6 @@
   .mt-top {
     padding-top: 5rem;
   }
-  .one-line {
-    font-size: 1.6rem!important;
-  }
 }
 
 @media (max-height: 736px) { //iphone 6,7,8+
@@ -21,7 +18,7 @@
 
 @media (max-height: 653px) { // galaxy fold vertical
   .mt-top {
-    padding-top: 6rem;
+    padding-top: 56px;
   }
 }
 
@@ -63,12 +60,13 @@ html {
   background-color: #8ef0ff;
 }
 
-.titre-massage {
+.citation {
+  letter-spacing: 3px;
+}
+
+.titre-tem {
   width: 100%;
   font-size: larger;
   border-bottom: 5px solid #619cb1;
-}
-
-.one-line {
-  white-space: nowrap;
+  margin-bottom: 20px;
 }

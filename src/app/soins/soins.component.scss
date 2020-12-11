@@ -8,9 +8,6 @@
   .mt-top {
     padding-top: 5rem;
   }
-  .one-line {
-    font-size: 1.6rem!important;
-  }
 }
 
 @media (max-height: 736px) { //iphone 6,7,8+
@@ -63,12 +60,8 @@ html {
   background-color: #8ef0ff;
 }
 
-.titre-massage {
+.titre-soin {
   width: 100%;
   font-size: larger;
   border-bottom: 5px solid #619cb1;
-}
-
-.one-line {
-  white-space: nowrap;
 }

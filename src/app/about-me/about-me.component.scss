@@ -8,9 +8,6 @@
   .mt-top {
     padding-top: 5rem;
   }
-  .one-line {
-    font-size: 1.6rem!important;
-  }
 }
 
 @media (max-height: 736px) { //iphone 6,7,8+
@@ -34,6 +31,7 @@
 @media (min-width: 991px) {
   .view {
     padding-top: 6rem;
+    height: 100%;
   }
   .row {
     border: solid 4px rgba(0, 0, 0, 1);
@@ -42,8 +40,29 @@
   }
 }
 
+@media (max-width: 1025px) {
+  .row {
+    border: solid 4px rgba(0, 0, 0, 1);
+    background-color: rgba(235, 235, 255, 0.9);
+    padding: 15px;
+    padding-top: 6rem;
+  }
+}
+
+/* No greater than 990px, no less than 400px */
+@media (max-width:990px) and (min-width:768px) {
+  img {
+    width:90%;
+  }
+}​
+
 .mt-top {
   padding-bottom: 2%;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body,
@@ -63,12 +82,6 @@ html {
   background-color: #8ef0ff;
 }
 
-.titre-massage {
-  width: 100%;
-  font-size: larger;
-  border-bottom: 5px solid #619cb1;
-}
-
-.one-line {
-  white-space: nowrap;
+span {
+  font-weight: bold;
 }

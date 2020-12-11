@@ -14,6 +14,10 @@ import { SidenavModule, WavesModule, AccordionModule } from 'ng-uikit-pro-standa
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MassageComponent } from './massage/massage.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { SoinsComponent } from './soins/soins.component';
+import { TemoignageComponent } from './temoignage/temoignage.component';
+import { NutritionComponent } from './nutrition/nutrition.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +26,10 @@ import { AboutMeComponent } from './about-me/about-me.component';
     NavBarComponent,
     MassageComponent,
     AboutMeComponent,
+    SoinsComponent,
+    TemoignageComponent,
+    NutritionComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
